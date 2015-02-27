@@ -1,0 +1,271 @@
+/* Colors here */
+/* Font stuff here */
+/******************************
+ * Variables
+ */
+/* spacing */
+/*
+  * End Variables
+  ******************************/
+.chapter {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.chapter > section:first-of-type > p.summary + p:not(.summary)::first-letter,
+.chapter > section:first-of-type > p:not(.summary):first-of-type::first-letter {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  float: left;
+  line-height: .8em;
+  padding: 0;
+  padding-right: .05em;
+  color: #3e75ab; }
+
+@media print {
+  .chapter > section:first-of-type > p.summary + p:not(.summary)::first-letter,
+  .chapter > section:first-of-type > p:not(.summary):first-of-type::first-letter {
+    padding-top: .05em; } }
+h2, h3, h4 {
+  color: #444444; }
+
+h3, h4 {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 500;
+  font-style: normal;
+  font-style: italic; }
+
+h1 {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #222222;
+  margin: 4rem 0; }
+
+h2 {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem 0; }
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.625rem;
+  margin: 2rem 0; }
+
+h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 2rem 0; }
+
+h4.centered {
+  text-align: center;
+  margin-top: 3rem; }
+
+.summary {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: #666666;
+  text-align: left;
+  text-indent: 0;
+  margin-bottom: 4rem;
+  font-style: italic;
+  margin-top: 4rem; }
+
+li, p {
+  line-height: 1.625em;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+  hyphenate-lines: 3; }
+
+p + p {
+  text-indent: 1.5em; }
+
+/*don't indent paragraphs in list items*/
+li p {
+  text-indent: 0;
+  margin: 1em 0; }
+
+.oneline {
+  text-indent: 0;
+  margin: 1em 0; }
+
+.oneline + p {
+  text-indent: 0; }
+
+h2 + p,
+h3 + p,
+h4 + p,
+figure + p,
+div.highlight + p,
+section > p:first-of-type,
+blockquote + p,
+.summary + p {
+  text-indent: 0; }
+
+/*Make sure the first paragraph always has spacing at top.*/
+section > p:first-of-type {
+  margin-top: 4rem; }
+
+section {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  /*so absolutely positioned widths of figures don't overflow*/
+  position: relative;
+  padding: 0 2em;
+  /*for pdf formatting */ }
+
+/*TODO move to flexbox chapter scss*/
+.sucks > .border {
+  width: 13em;
+  border: 1px solid black; }
+
+figure {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  width: 100%; }
+
+figure.intro {
+  margin: 4rem 0;
+  width: 100%; }
+
+figure.intro img {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto; }
+
+figcaption {
+  margin-top: 0.5rem;
+  line-height: 1.5em;
+  font-size: 0.75rem;
+  text-align: center; }
+
+figure img {
+  max-width: 100%; }
+
+figure a {
+  display: block;
+  position: absolute;
+  margin-top: -1.75em;
+  padding-bottom: 1.75em;
+  width: 100%;
+  max-width: 800px;
+  -webkit-transition: opacity .5s;
+  height: 475px; }
+
+figure a {
+  font-size: 1.125rem;
+  text-align: center; }
+
+pre.prettyprint {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%; }
+
+iframe {
+  display: block;
+  margin: 2rem auto; }
+
+figure.centered {
+  text-align: center; }
+
+figure.centered img {
+  display: inline; }
+
+figure.shadowed img {
+  box-shadow: 0 0 8px #666666;
+  border-radius: 4px;
+  border: 1px solid #666666; }
+
+ul li {
+  margin: 2rem 0;
+  list-style-type: circle; }
+
+ul > li ul > li {
+  margin-left: 1em;
+  list-style-type: disc; }
+
+div.screencast {
+  height: 400px;
+  width: 400px;
+  margin: 2rem auto;
+  border: 1px solid black; }
+
+div.screencast p {
+  width: 50%;
+  padding-top: 25%;
+  margin: 0 auto; }
+
+/*flexbox specific CSS*/
+.sucks {
+  margin: 3rem auto;
+  width: 50%; }
+
+.sucks h3 {
+  min-width: 11em;
+  margin-left: 2rem; }
+
+.advanced {
+  background: #eeeeee;
+  padding: 2em 2em;
+  margin: 1em 0; }
+
+.advanced p {
+  text-indent: 0;
+  margin: 1em 0; }
+
+.advanced h4 {
+  margin: 1em 0; }
+
+.keyword {
+  color: #e46119; }
+
+.quotemark {
+  font-size: 5rem;
+  position: absolute;
+  display: block;
+  margin-left: -3rem;
+  margin-top: 1rem; }
+
+/* also styles defined in syntax.css*/
+blockquote {
+  line-height: 1.625em; }
+
+blockquote span.by {
+  display: block;
+  text-align: right; }
+
+/* css for the table of contents */
+.toc li > span {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.5rem; }
+
+.summary.unfinished {
+  text-align: center; }
+
+/* cover styles */
+.cover {
+  margin: 0;
+  padding: 0; }
+
+.cover > img {
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+  padding: 0; }

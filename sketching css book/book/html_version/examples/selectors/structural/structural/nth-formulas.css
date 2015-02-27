@@ -1,0 +1,59 @@
+tbody > tr:nth-of-type(n + 5) {
+    display: none;
+}
+/*tbody > tr:nth-of-type(3n + 1) {
+    background-color: #eee;
+}
+
+tbody > tr:nth-of-type(3n + 2) {
+    background-color: #ddd;
+}
+
+tbody > tr:nth-of-type(3n + 3) {
+    background-color: #ccc;
+}*/
+
+
+table > thead td:nth-of-type(3){
+    width: 15%;
+}
+table > thead td:nth-of-type(2){
+    width: 35%;
+}
+table > thead td:nth-of-type(3){
+    width: 50%;
+}
+
+
+body {
+    padding: 3em;
+}
+
+tbody {
+    border: 1px solid #222;
+}
+
+td {
+    padding: 1em;
+}
+
+td {
+    line-height: 1.625em;
+    color: #222222;
+    font-family: georgia;
+}
+
+thead td {
+    background-color: #222222;
+    color: #eeeeee;
+    font-family: verdana;
+    font-size: 1.2em;
+}
+
+.keyword {
+    color: #e46119;
+}
+
+tbody tr, tbody td {
+    max-height: 4.875em;
+}

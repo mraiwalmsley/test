@@ -1,0 +1,244 @@
+/* 
+   Layout code for this example starts up here at the top.
+   The rest of the CSS is just for styling.
+ */
+
+
+header{
+    position: absolute;
+    margin-top: -10em;
+    margin-left: -1em;
+    z-index: 1;
+}
+header > div{
+    padding-top: 5em;
+    padding-left: 4em;
+    box-sizing: border-box;
+    width: 25em;
+    height: 15em;
+}
+
+#Body{
+    margin-top: 10em;
+    z-index: 100;
+    position: relative;
+}
+
+#main-nav{
+    display: flex;
+    height: 3em;
+    padding: 0 1em;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#main-nav > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0;
+    
+    background-color: rgb(175, 175, 175);
+    box-shadow: rgba(0, 0, 0, 0.298039) 8px 0px 25px 2px;
+}
+
+#Content > .left > div:first-of-type
+{
+    padding-left: 3em;
+}
+
+#Content > .left > div:first-of-type{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 1em 1em 0 1em;
+}
+
+#Content > .left > ul{
+    margin: 0 1em 1em 1em;
+}
+
+#Content > .left > ul > li{
+    margin: 0 1em 1em 0;
+    padding: 1em 1em 1em 2em;
+}
+
+#Content > .left > ul > li h2{
+    padding-bottom: .25em;
+}
+
+#Content {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+#Content > .left {
+    flex: 2 0 0;
+}
+
+#Content > aside{
+    flex: 1 0 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 1em 1em 1em 0;
+}
+
+#Content > aside > *{
+    flex: 1 1 auto;
+    padding: 1em;
+    box-shadow: lightgrey 0px 0px 3px 2px;
+}
+#Content > aside > a{
+    display: block;
+    margin: 1em 0;
+}
+
+#Content > aside > div:first-of-type h4{
+    font-weight: bold;
+    margin-bottom: .25em;
+}
+
+aside > .categories > ul > li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+aside > .categories > ul > li:nth-of-type(n+2){
+    margin-top: 1em;
+}
+
+aside > .categories > ul > li > span:first-of-type{
+    flex: 1 0 auto;
+}
+
+aside > .categories > ul > li > span:nth-child(2){
+    flex: 0 1 auto;
+    margin-left: auto;
+}
+
+#Content > aside > div:first-of-type p{
+    line-height: 1.4em;
+}
+
+#Content > aside > div:first-of-type > div > a{
+    display: inline-block;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    background: #4e68c7;
+    box-shadow: 1px 0px 1px #203891,0px 1px 1px #3852b1,2px 1px 1px #203891,1px 2px 1px #3852b1,3px 2px 1px #203891,2px 3px 1px #3852b1,4px 3px 1px #203891,3px 4px 1px #3852b1,5px 4px 1px #203891,4px 5px 1px #3852b1,6px 5px 1px #203891;
+    color: white;
+    white-space: nowrap;
+    font-family: "Gotham Rounded A","Gotham Rounded B","proxima-nova-soft",sans-serif;
+    padding: 9px 16px;
+    line-height: 1.4;
+    margin-top: .25em;
+}
+
+#Content > aside > a{
+    background: #799972;
+    text-align: center;
+    box-shadow: 1px 0px 1px #4a6045,0px 1px 1px #617d5b,2px 1px 1px #4a6045,1px 2px 1px #617d5b,3px 2px 1px #4a6045,2px 3px 1px #617d5b,4px 3px 1px #4a6045,3px 4px 1px #617d5b,5px 4px 1px #4a6045,4px 5px 1px #617d5b,6px 5px 1px #4a6045;
+}
+
+aside > .categories > h4{
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+aside > .categories strong a{
+    font-weight: bold;
+    color: rgb(133, 156, 230);
+}
+
+
+
+/* CSS for styling starts here. */
+
+body{
+    font-family: verdana, sans-serif;
+    color: #333333;
+    background-color: #222222;
+    margin: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
+#Content, #Body{
+    background-color: rgb(255, 230, 197);
+}
+
+#main-nav{
+    background-color: rgb(214, 213, 213);
+}
+
+#Content > .left > div:first-of-type,
+#Content > .left > ul{
+    background-color: white;
+}
+
+header > div{
+    background-color: rgb(225, 135, 40);
+}
+
+header > div > a{
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+header > div > a > span{
+    color: #eeeeee;
+}
+
+#main-nav > a{
+    text-transform: uppercase;
+}
+
+#Content > .left h1{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#Content > .left > ul > li{
+    background-color: rgb(245, 245, 245);
+}
+
+#Content > .left > ul > li > div > h2{
+    font-weight: bold;
+}
+
+#Content > .left > ul > li > div > div *{
+    color: rgb(153, 153, 153);
+    font-size: .85em;
+}
+
+#PagerBefore{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+#PagerBefore *{
+    color: #eeeeee;
+}
+
+aside > *{
+    background-color: white;
+}
+
+footer{
+    color: rgb(149, 153, 153);
+    padding: 1em;
+}
+
+footer a{
+    color: rgb(133, 148, 212);
+}
+

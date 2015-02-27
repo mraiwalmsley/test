@@ -1,0 +1,129 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/******************************
+* Grid context
+*/
+/******************************
+ * Columns
+*/
+/******************************
+ * Reset a few styles
+ */
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+/******************************
+ * Basic layout for narrow screens. No grid yet.
+*/
+body {
+  padding: 0;
+  min-width: 300px;
+  margin: 0 auto; }
+
+body > * {
+  background-color: #eee;
+  -webkit-background-clip: content;
+  -moz-background-clip: content;
+  background-clip: content; }
+
+ul.images > li > figure {
+  max-width: 100px;
+  margin: 0 auto; }
+  ul.images > li > figure img {
+    max-width: 100%; }
+
+header {
+  padding: 1rem 0; }
+  header h1 {
+    margin: 0;
+    text-align: center; }
+  header > ul {
+    text-align: center; }
+  header > ul > li {
+    display: inline;
+    padding-right: 1rem; }
+
+aside {
+  height: 400px; }
+
+footer {
+  height: 100px; }
+
+/******************************
+* Put the images into two columns.
+*/
+@media only screen and (min-width: 430px) and (max-width: 840px) {
+  article {
+    max-width: 400px;
+    margin: 0 auto; }
+
+  ul.images {
+    margin: 0;
+    padding: 0; }
+    ul.images::after {
+      content: "";
+      display: table;
+      clear: both; }
+    ul.images > * {
+      padding: .25rem;
+      float: left; }
+    ul.images > li {
+      width: 50%; } }
+@media only screen and (min-width: 840px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    margin: 0 auto; }
+    body::after {
+      content: "";
+      display: table;
+      clear: both; }
+    body > * {
+      padding: .25rem;
+      float: left; }
+
+  header {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    header::after {
+      content: "";
+      display: table;
+      clear: both; }
+    header > * {
+      padding: .25rem;
+      float: left; }
+    header > h1 {
+      width: 66.6666666%; }
+    header > ul {
+      width: 33.333333333%; }
+
+  article {
+    width: 66.6666666%; }
+
+  aside {
+    width: 33.333333333%; }
+
+  footer {
+    width: 100%; }
+
+  ul.images {
+    margin: 0;
+    padding: 0; }
+    ul.images::after {
+      content: "";
+      display: table;
+      clear: both; }
+    ul.images > * {
+      padding: .25rem;
+      float: left; }
+    ul.images > li {
+      width: 33.333333333%; } }

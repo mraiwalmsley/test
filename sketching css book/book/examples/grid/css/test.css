@@ -1,0 +1,71 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/******************************
+* Grid context
+*/
+/******************************
+ * Columns
+*/
+body {
+  padding: 0;
+  margin: 0; }
+
+.outer {
+  margin: 0;
+  padding: 0;
+  /******************************
+   * middle section
+   */ }
+  .outer::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .outer > * {
+    padding: .25rem;
+    float: left; }
+  .outer > .left, .outer > .right {
+    width: 20%; }
+  .outer > .middle {
+    width: 60%;
+    margin: 0;
+    padding: 0; }
+    .outer > .middle::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .outer > .middle > * {
+      padding: .25rem;
+      float: left; }
+    .outer > .middle > .left, .outer > .middle > .right {
+      width: 50%; }
+    .outer > .middle > .bottom {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      .outer > .middle > .bottom::after {
+        content: "";
+        display: table;
+        clear: both; }
+      .outer > .middle > .bottom > * {
+        padding: .25rem;
+        float: left; }
+      .outer > .middle > .bottom > .left {
+        width: 33.333333333%; }
+      .outer > .middle > .bottom > .right {
+        width: 66.6666666%;
+        margin: 0;
+        padding: 0; }
+        .outer > .middle > .bottom > .right::after {
+          content: "";
+          display: table;
+          clear: both; }
+        .outer > .middle > .bottom > .right > * {
+          padding: .25rem;
+          float: left; }
+        .outer > .middle > .bottom > .right > .half {
+          width: 50%; }
+        .outer > .middle > .bottom > .right > .pink {
+          width: 100%; }

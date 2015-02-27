@@ -1,0 +1,29 @@
+ul.outer li:last-of-type {
+    outline: 1px solid blue;
+}
+
+li {
+    font-family: verdana;
+    color: #222222;
+    list-style-type: disc;
+    margin: 1em;
+    max-width: 30em;
+    line-height: 1.4em;
+}
+
+/* The inner list*/
+ul li ul li {
+    list-style-type: circle;
+    margin-left: 1em;
+}
+
+h3{
+    margin: 1em 0;
+    text-align: left;
+}
+
+ul.outer {
+    padding-left: 1em;
+    max-width: 200px;
+    margin: 0 auto;
+}

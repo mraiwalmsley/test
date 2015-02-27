@@ -1,0 +1,53 @@
+/* Font stuff here */
+/* Colors here */
+.interviews, .screencasts {
+  width: 1000px;
+  margin: 0 auto; }
+
+.interviews .main, .interviews aside, .screencasts .main, .screencasts aside {
+  padding-top: 4rem; }
+.interviews .main, .screencasts .main {
+  width: 800px;
+  float: left;
+  padding-right: 200px; }
+.interviews aside, .screencasts aside {
+  width: 200px;
+  position: fixed;
+  right: 0;
+  padding-right: 1em;
+  padding-top: 11rem;
+  background-color: #ddd;
+  height: 100%; }
+.interviews aside > ul > li, .screencasts aside > ul > li {
+  list-style-type: none;
+  text-align: right;
+  font-size: 1.125rem; }
+  .interviews aside > ul > li > a, .screencasts aside > ul > li > a {
+    text-decoration: none; }
+.interviews .main > .video, .screencasts .main > .video {
+  bacgkround-color: #eee;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc; }
+.interviews .main > iframe, .screencasts .main > iframe {
+  margin: 0 auto; }
+.interviews .main > h1, .screencasts .main > h1 {
+  margin-top: 0; }
+.interviews .main > .meta, .screencasts .main > .meta {
+  padding: 0 2em; }
+.interviews .main > .meta h2, .screencasts .main > .meta h2 {
+  text-align: left;
+  text-decoration: underline; }
+.interviews .main > .meta > .notes, .screencasts .main > .meta > .notes {
+  border-right: 1px solid #cccccc; }
+.interviews .main > .meta > .notes li, .screencasts .main > .meta > .notes li {
+  text-align: left; }
+.interviews .main > .meta > .notes,
+.interviews .main > .meta > .links, .screencasts .main > .meta > .notes,
+.screencasts .main > .meta > .links {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding: 0 2rem; }
+
+.screencasts > aside {
+  padding-top: 0; }

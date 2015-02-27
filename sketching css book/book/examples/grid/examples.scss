@@ -1,0 +1,80 @@
+
+@import "grid";
+
+$base-color: rgb(62, 117, 171);
+
+* {
+    -webkit-background-clip: content;
+    background-clip: content;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: georgia, serif;
+    font-size: 2rem;
+    color: #222;
+    text-align: center;
+}
+
+[class*=example] {
+    @include grid;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.example1 > div {
+    height: 100px;
+    @include col-1-2;
+}
+
+.example2 > div {
+    height: 100px;
+    @include col-1-4;
+}
+
+.example3 > div {
+    height: 100px;
+    @include col-1-3;
+}
+
+.example3 > div:nth-of-type(2n) {
+    @include col-2-3;
+}
+
+.example1 > *, .example2 > *, .example3 > *, .example4 > * {
+    background-color: $base-color;
+    opacity: .5;
+}
+
+header {
+    height: 100px;
+    @include col-1-1;
+}
+
+article {
+    @include grid;
+    @include col-2-3;
+    height: 400px;
+}
+
+aside {
+    @include col-1-3;
+    height: 200px;
+}
+
+footer {
+    @include col-1-1;
+    height: 100px;
+}
+
+article > div {
+    height: 100px;
+    background-color: #eee;
+    opacity: .5;
+    @include col-1-3;
+}

@@ -1,0 +1,12 @@
+/* Colors here */
+h1.astronaut {
+  color: #4560d1; }
+
+figure.astronaut {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  border-radius: 50%; }
+  figure.astronaut img {
+    border-radius: 50%;
+    display: block; }
